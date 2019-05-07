@@ -1,7 +1,55 @@
 {
-  "h3": "Что такое Inrealty",
-  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  "image": {
-    "banner": "/static/images/img-2.png"
-  }
+  "h3": "Вступай в нашу команду",
+  "text": "Купив токены Inrealty - вы станете частью большой команды профессионалов рынков недвижимости и криптовалют!",
+  "button": "все участники inrealty",
+  "peoples": [
+    {
+      "name": "Имя Фамилия",
+      "vacancy": "Должность",
+      "photo": "/static/images/peoples/av1.png",
+      "ïcon": "/static/images/peoples/tg.png"
+    },
+    {
+      "name": "Имя Фамилия",
+      "vacancy": "Должность",
+      "photo": "/static/images/peoples/av2.png",
+      "ïcon": "/static/images/peoples/tg.png"
+    },
+    {
+      "name": "Имя Фамилия",
+      "vacancy": "Должность",
+      "photo": "/static/images/peoples/av3.png",
+      "ïcon": "/static/images/peoples/tg.png"
+    },
+    {
+      "name": "Имя Фамилия",
+      "vacancy": "Должность",
+      "photo": "/static/images/peoples/av4.png",
+      "ïcon": "/static/images/peoples/tg.png"
+    },
+    {
+      "name": "Имя Фамилия",
+      "vacancy": "Должность",
+      "photo": "/static/images/peoples/av5.png",
+      "ïcon": "/static/images/peoples/tg.png"
+    },
+    {
+      "name": "Имя Фамилия",
+      "vacancy": "Должность",
+      "photo": "/static/images/peoples/av6.png",
+      "ïcon": "/static/images/peoples/tg.png"
+    },
+    {
+      "name": "Имя Фамилия",
+      "vacancy": "Должность",
+      "photo": "/static/images/peoples/av7.png",
+      "ïcon": "/static/images/peoples/tg.png"
+    },
+    {
+      "name": "Имя Фамилия",
+      "vacancy": "Должность",
+      "photo": "/static/images/peoples/av8.png",
+      "ïcon": "/static/images/peoples/tg.png"
+    }
+  ]
 }

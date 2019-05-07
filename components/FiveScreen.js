@@ -8,15 +8,17 @@ let getSteps = () => {
 }
 
 const FiveScreenWrapper = styled.div`
-    background-image: linear-gradient(to bottom, #293d64 0 20%, #ffffff 20% 100%);
+    background-image: linear-gradient(to bottom,#293d64 0 70%,#ffffff 70% 100%);
 `;
 
 const FiveScreenContainer = styled.div`
   box-shadow: 0 20px 80px rgba(41, 61, 100, 0.12);
   border-radius: 12px;
   background-color: #ffffff;
-  margin: 0 243px;
+  margin: 0 12.66%;
   overflow: hidden;
+  padding: 70px 0 120px 0;
+  margin-bottom: 120px;
 `
 
 const Title = styled.h3`
@@ -34,6 +36,7 @@ const StepTitle = styled.div`
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
+  margin: 0 0 18px 0;
 `;
 
 const StepText = styled.div`
@@ -51,32 +54,58 @@ const StepImage = styled.div`
   background-color: #ffffff;
   border-radius: 50%;
   position: relative;
-  
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 500%;
-    height: 2px;
-    background-color: rgba(41,61,100,0.2);
-  }
+  margin-left: 24px;
+  margin-bottom: 57px;
+  position: relative;
+  z-index: 1;
 `;
 
 const StepItem = styled.div`
   margin: 0;
+  padding: 0 5%;
+  position: relative;
+
+  &.imageTop {
+    margin-top: 264px;
+  }
+
+  &.imageBottom {
+    margin-top: 52px;
+
+    .StepImage {
+      order: 1;
+      margin-top: 62px;
+    }
+    .StepTextContent {
+      order: 0;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(41,61,100,0.2);
+    bottom: 255px;
+  }
 `;
 
-const StepTextContent = styled.div``;
+const StepTextContent = styled.div`
+  height: 150px;
+`;
+const StepsContainer = styled.div``;
 
 const Steps = getSteps().map.call(FiveScreenData.steps, (step,  index) => {
-    return <StepItem className={'w-third'}>
-        <StepTextContent>
+    return <StepItem key={index} className={`flex flex-column w-third ${step.order===true ? 'imageBottom' : 'imageTop'}`}>
+        <StepImage className={'flex items-center justify-center StepImage'}>
+            <img src={step.image} alt={step.title}/>
+        </StepImage>
+        <StepTextContent className={'StepTextContent'}>
             <StepTitle>{step.title}</StepTitle>
             <StepText>{step.text}</StepText>
         </StepTextContent>
-        <StepImage className={'flex items-center justify-center'}>
-            <img src={step.image} alt={step.title}/>
-        </StepImage>
     </StepItem>
 });
 
@@ -85,7 +114,9 @@ const FiveScreen = () => (
         <FiveScreenContainer>
             <Title className={'tc'}>{FiveScreenData.h3}</Title>
 
-            <div className={'flex'}>{Steps}</div>
+            <StepsContainer className={'flex'}>
+              {Steps}
+            </StepsContainer>
         </FiveScreenContainer>
     </FiveScreenWrapper>
 );

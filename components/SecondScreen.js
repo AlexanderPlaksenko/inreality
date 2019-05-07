@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import SecondScreenData from "/static/data/SecondScreen.json"
 import PlayButton from "/components/PlayButton"
+import Fade from 'react-reveal/Fade';
 
 const SecondScreenWrapper = styled.div`
   background-image: url("${SecondScreenData.image.banner}");
@@ -48,8 +49,12 @@ const SecondScreen = () => (
     <SecondScreenWrapper className={"wrapper"}>
         <SecondScreenItem className={"flex justify-center items-center"}>
             <TextWrapper>
+              <Fade ssrFadeout left cascade>
                 <Title>{SecondScreenData.h3}</Title>
+              </Fade>
+              <Fade ssrFadeout top cascade>
                 <Text>{SecondScreenData.text}</Text>
+              </Fade>
             </TextWrapper>
 
             <SecondScreenImage>

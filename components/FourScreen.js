@@ -19,6 +19,7 @@ const Title = styled.h3`
   font-size: 40px;
   font-weight: 300;
   line-height: 56px;
+  margin: 0 0 19px 0;
 `;
 
 const Text = styled.p`
@@ -27,6 +28,10 @@ const Text = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
+
+  &.bottom-text {
+    margin: 110px 0 6px 0;
+  }
 `;
 
 const GraphButton = styled.div`
@@ -54,6 +59,10 @@ const GraphContent = styled.div`
   img {
     max-width: 100%;
   }
+`;
+
+const GraphButtonsContainer = styled.div`
+    margin: 62px 0 52px 0;
 `;
 
 class FourScreen extends React.Component {
@@ -100,10 +109,10 @@ class FourScreen extends React.Component {
                         {FourScreenData.text}
                     </Text>
 
-                    <div className={'tc'}>{GraphButtons}</div>
+                    <GraphButtonsContainer className={'tc'}>{GraphButtons}</GraphButtonsContainer>
                     <div>{GraphContents}</div>
 
-                    <Text className={'tc'}>
+                    <Text className={'tc bottom-text'}>
                         {FourScreenData.text2}
                     </Text>
                 </div>

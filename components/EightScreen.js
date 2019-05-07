@@ -35,8 +35,8 @@ const H3 = styled.div`
 `;
 
 const Image = styled.img`
-  width: 430px;
-  height: 280px;
+  width: 100%;
+  max-width: 430px;
 `;
 
 const Date = styled.div`

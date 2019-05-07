@@ -8,8 +8,8 @@ const HeaderContainer = styled.header`
     top: 0;
     width: 100%;
     padding-top: 36px;
-    padding-left: 120px;
-    padding-right: 118px;
+    padding-left: 6.15%;
+    padding-right: 6.15%;
 `;
 
 const HeaderWrapper = styled.div`

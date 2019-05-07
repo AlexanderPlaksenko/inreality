@@ -8,16 +8,19 @@ import ThirdScreen from '/components/ThirdScreen'
 import FourScreen from '/components/FourScreen'
 import FiveScreen from '/components/FiveScreen'
 import SixScreen from '/components/SixScreen'
-import SevenScreen from "../components/SevenScreen";
+import SevenScreen from "../components/SevenScreen"
 import EightScreen from '/components/EightScreen'
 import Footer from '/components/Footer'
+import config from 'react-reveal/globals';
+
+config({ ssrFadeout: true });
 
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
     .wrapper {
         max-width: 1920px;
-        padding: 0 118px;
+        padding: 0 6.15%;
         margin: 0 auto;
         width: 100%;
         display: block;

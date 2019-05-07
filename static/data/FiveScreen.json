@@ -5,18 +5,21 @@
       "id": "step1",
       "image":"/static/images/step.png",
       "title": "Название шага 1",
+      "order": false,
       "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       "id": "step2",
       "image":"/static/images/step.png",
       "title": "Название шага 2",
+      "order": true,
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       "id": "step3",
       "image":"/static/images/step.png",
       "title": "Название шага 3",
+      "order": false,
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
