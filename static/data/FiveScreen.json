@@ -1,0 +1,23 @@
+{
+  "h3": "Как купить токены Inrealty?",
+  "steps": [
+    {
+      "id": "step1",
+      "image":"/static/images/step.png",
+      "title": "Название шага 1",
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": "step2",
+      "image":"/static/images/step.png",
+      "title": "Название шага 2",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id": "step3",
+      "image":"/static/images/step.png",
+      "title": "Название шага 3",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ]
+}

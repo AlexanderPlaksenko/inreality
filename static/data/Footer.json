@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": "link1",
+      "title": "8 800 800-00-00",
+      "link": "8 800 800-00-00"
+    },
+    {
+      "id": "link2",
+      "title": "8 495 000-00-00",
+      "link": "8 495 000-00-00"
+    },
+    {
+      "id": "link3",
+      "title": "support@gmail.com",
+      "link": "support@gmail.com"
+    },
+    {
+      "id": "link4",
+      "title": "Certificate of Incorporation",
+      "link": "Certificate of Incorporation",
+      "style": "underline"
+    }
+  ]
+}

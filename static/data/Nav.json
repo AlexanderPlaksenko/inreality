@@ -1,0 +1,6 @@
+[
+    {"id": "main", "title": "ГЛАВНАЯ"},
+    {"id": "inreality", "title": "INREALTY"},
+    {"id": "team", "title": "КОМАНДА"},
+    {"id": "blog", "title": "БЛОГ"}
+]

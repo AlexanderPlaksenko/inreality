@@ -1,0 +1,78 @@
+{
+  "h3": "Рынок недвижимости",
+  "text": "Крупнейший в мире, обходя по капитализации рынок ценных бумаг, рынок углеводородов, оставаясь также наиболее стабильным для инвесторов.",
+  "text2": "Покупая токены Inrealty вы получаете стабильный доход, обеспеченный недвижимостью, избегая рисков связанных с ее покупкой.",
+  "items": [
+    {
+      "id": "housing",
+      "icon": "/static/images/housing.svg",
+      "image": "/static/images/housing-progress.png",
+      "title": "недвижимость",
+      "price": "280 млн $",
+      "tooltips": [
+        {
+          "id": "agro",
+          "name": "Агрокультуры",
+          "price": "27 млн $"
+        },
+        {
+          "id": "commerce",
+          "name": "Коммерческая",
+          "price": "33 млн $"
+        },
+        {
+          "id": "residents",
+          "name": "Резиденции",
+          "price": "220 млн $"
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "icon": "/static/images/finance.svg",
+      "image": "/static/images/finance-progress.png",
+      "title": "финансы",
+      "price": "180 млн $",
+      "tooltips": [
+        {
+          "id": "Lorem",
+          "name": "Агрокультуры",
+          "price": "27 млн $"
+        },
+        {
+          "id": "Lorem",
+          "name": "Коммерческая",
+          "price": "33 млн $"
+        }
+      ]
+    },
+    {
+      "id": "oil",
+      "icon": "/static/images/oil.svg",
+      "image": "/static/images/oil-progress.png",
+      "title": "Нефть",
+      "price": "180 млн $"
+    },
+    {
+      "id": "gdp",
+      "icon": "/static/images/gdp.svg",
+      "image": "/static/images/gdp-progress.png",
+      "title": "финансы",
+      "price": "180 млн $"
+    },
+    {
+      "id": "gold",
+      "icon": "/static/images/gold.svg",
+      "image": "/static/images/gold-progress.png",
+      "title": "Золото",
+      "price": "180 млн $"
+    },
+    {
+      "id": "btc",
+      "icon": "/static/images/btc.svg",
+      "image": "/static/images/btc-progress.png",
+      "title": "криптовалюты",
+      "price": "180 млн $"
+    }
+  ]
+}

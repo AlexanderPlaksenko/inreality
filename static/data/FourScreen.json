@@ -1,0 +1,32 @@
+{
+  "h3": "Экономика токена Inrealty",
+  "text": "Токен Inrealty востребован на рынке криптовалют, так как будучи обеспеченным недвижимостью он является более стабильным активом с гарантированной доходностью.",
+  "text2": "Покупая токены Inrealty вы становитесь частью привлекательной для трейдеров финансовой экосистемы, получая не только стабильный гарантированный доход, но и возможность заработка на росте цены токена. Прочитай <a href='/' target='_blank'>White Paper</a>, чтобы узнать больше!\n",
+  "items": [
+    {
+      "id": "graph1",
+      "image":"/static/images/graphs/graph.png",
+      "title": "INREALTY / USD"
+    },
+    {
+      "id": "graph2",
+      "image":"/static/images/graphs/graph2.png",
+      "title": "INREALTY / RUR"
+    },
+    {
+      "id": "graph3",
+      "image":"/static/images/graphs/graph.png",
+      "title": "INREALTY / BTC"
+    },
+    {
+      "id": "graph4",
+      "image":"/static/images/graphs/graph2.png",
+      "title": "INREALTY / LTC"
+    },
+    {
+      "id": "graph5",
+      "image":"/static/images/graphs/graph.png",
+      "title": "INREALTY / CRP"
+    }
+  ]
+}

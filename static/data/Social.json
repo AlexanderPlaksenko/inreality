@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": "facebook",
+      "icon": "/static/images/social/fb.svg",
+      "link": "https://facebook.com"
+    },
+    {
+      "id": "twitter",
+      "icon": "/static/images/social/twitter.svg",
+      "link": "https://twitter.com"
+    },
+    {
+      "id": "medium",
+      "icon": "/static/images/social/medium.svg",
+      "link": "https://twitter.com"
+    },
+    {
+      "id": "btc",
+      "icon": "/static/images/social/btc.svg",
+      "link": "https://twitter.com"
+    },
+    {
+      "id": "tg",
+      "icon": "/static/images/social/tg.svg",
+      "link": "https://twitter.com"
+    },
+    {
+      "id": "reddit",
+      "icon": "/static/images/social/reddit.svg",
+      "link": "https://twitter.com"
+    },
+    {
+      "id": "youtube",
+      "icon": "/static/images/social/youtube.svg",
+      "link": "https://twitter.com"
+    }
+  ]
+}

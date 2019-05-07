@@ -1,0 +1,30 @@
+{
+  "h3": "Медиа о Inrealty",
+  "moreItems": "БОЛЬШЕ СТАТЕЙ",
+  "items": [
+    {
+      "id": "item1",
+      "image":"/static/images/item1.png",
+      "date": "25 МАРТА 2019",
+      "title": "German Startup Lition Starts Fire Amidst Crypto Winter",
+      "link": "German Startup Lition Starts Fire Amidst Crypto Winter",
+      "text": "German blockchain startup Lition has overcome the chill of the crypto winter in their ICO"
+    },
+    {
+      "id": "item2",
+      "image": "/static/images/item2.png",
+      "date": "25 МАРТА 2019",
+      "title": "German Startup Lition Starts Fire Amidst Crypto Winter",
+      "link": "German Startup Lition Starts Fire Amidst Crypto Winter",
+      "text": "German blockchain startup Lition has overcome the chill of the crypto winter in their ICO"
+    },
+    {
+      "id": "item3",
+      "image": "/static/images/item3.png",
+      "date": "25 МАРТА 2019",
+      "title": "German Startup Lition Starts Fire Amidst Crypto Winter",
+      "link": "German Startup Lition Starts Fire Amidst Crypto Winter",
+      "text": "German blockchain startup Lition has overcome the chill of the crypto winter in their ICO"
+    }
+  ]
+}
