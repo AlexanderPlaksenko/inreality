@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import ThirdScreenData from "/static/data/ThirdScreen.json"
+import Fade from "react-reveal/Fade";
 
 function getMenuItems() {
     return [
@@ -86,19 +87,27 @@ const Items = getMenuItems().map.call(ThirdScreenData.items, function (item) {
 const ThirdScreen = () => (
     <ThirdScreenWrapper>
         <div className={"wrapper"}>
-            <Title>
-                {ThirdScreenData.h3}
-            </Title>
-            <Text>
-                {ThirdScreenData.text}
-            </Text>
-            <Text>
-                {ThirdScreenData.text2}
-            </Text>
+            <Fade bottom delay={'200'}>
+                <Title>
+                    {ThirdScreenData.h3}
+                </Title>
+            </Fade>
+            <Fade bottom delay={'400'}>
+                <Text>
+                    {ThirdScreenData.text}
+                </Text>
+            </Fade>
+            <Fade bottom delay={'600'}>
+                <Text>
+                    {ThirdScreenData.text2}
+                </Text>
+            </Fade>
 
-            <ItemsWrapper>
-                {Items}
-            </ItemsWrapper>
+            <Fade bottom delay={'800'}>
+                <ItemsWrapper>
+                    {Items}
+                </ItemsWrapper>
+            </Fade>
         </div>
     </ThirdScreenWrapper>
 );

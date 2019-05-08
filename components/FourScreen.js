@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import FourScreenData from "../static/data/FourScreen.json";
+import Fade from "react-reveal/Fade";
 
 let getItems = () => {
     return [
@@ -77,7 +78,7 @@ class FourScreen extends React.Component {
         if (index === 0) {
             index = this.props.active;
         }
-        this.setState({ active: index});
+        this.setState({active: index});
     };
 
     isActive = index => {
@@ -90,7 +91,8 @@ class FourScreen extends React.Component {
     render = () => {
         const GraphButtons = getItems().map.call(FourScreenData.items, (item, index) => {
             return <React.Fragment key={index}>
-                <GraphButton key={index} onClick={() => this.setActive(index)} active={this.isActive(index)}>{item.title}</GraphButton>
+                <GraphButton key={index} onClick={() => this.setActive(index)}
+                             active={this.isActive(index)}>{item.title}</GraphButton>
             </React.Fragment>
         });
         const GraphContents = getItems().map.call(FourScreenData.items, (item, index) => {
@@ -102,19 +104,28 @@ class FourScreen extends React.Component {
         return (
             <FourScreenWrapper>
                 <div className={"wrapper"}>
-                    <Title className={'tc'}>
-                        {FourScreenData.h3}
-                    </Title>
-                    <Text className={'tc'}>
-                        {FourScreenData.text}
-                    </Text>
+                    <Fade bottom delay={'200'}>
+                        <Title className={'tc'}>
+                            {FourScreenData.h3}
+                        </Title>
+                    </Fade>
+                    <Fade bottom delay={'400'}>
+                        <Text className={'tc'}>
+                            {FourScreenData.text}
+                        </Text>
+                    </Fade>
+                    <Fade bottom delay={'600'}>
+                        <GraphButtonsContainer className={'tc'}>{GraphButtons}</GraphButtonsContainer>
+                    </Fade>
+                    <Fade bottom delay={'800'}>
+                        <div>{GraphContents}</div>
+                    </Fade>
 
-                    <GraphButtonsContainer className={'tc'}>{GraphButtons}</GraphButtonsContainer>
-                    <div>{GraphContents}</div>
-
-                    <Text className={'tc bottom-text'}>
-                        {FourScreenData.text2}
-                    </Text>
+                    <Fade bottom delay={'1000'}>
+                        <Text className={'tc bottom-text'}>
+                            {FourScreenData.text2}
+                        </Text>
+                    </Fade>
                 </div>
             </FourScreenWrapper>
         );

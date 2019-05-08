@@ -49,16 +49,18 @@ const SecondScreen = () => (
     <SecondScreenWrapper className={"wrapper"}>
         <SecondScreenItem className={"flex justify-center items-center"}>
             <TextWrapper>
-              <Fade ssrFadeout left cascade>
-                <Title>{SecondScreenData.h3}</Title>
-              </Fade>
-              <Fade ssrFadeout top cascade>
-                <Text>{SecondScreenData.text}</Text>
-              </Fade>
+                <Fade bottom delay={'200'}>
+                    <Title>{SecondScreenData.h3}</Title>
+                </Fade>
+                <Fade bottom delay={'400'}>
+                    <Text>{SecondScreenData.text}</Text>
+                </Fade>
             </TextWrapper>
 
             <SecondScreenImage>
-                <PlayButton ripple={false} text={false}/>
+                <Fade bottom delay={'600'}>
+                    <PlayButton ripple={false} text={false}/>
+                </Fade>
             </SecondScreenImage>
         </SecondScreenItem>
     </SecondScreenWrapper>

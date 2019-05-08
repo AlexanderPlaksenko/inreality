@@ -1,6 +1,7 @@
 import styled, {ThemeProvider} from "styled-components"
 import Button from "./Button"
 import SevenScreenData from "/static/data/SevenScreen.json"
+import Fade from "react-reveal/Fade";
 
 const SevenScreenWrapper = styled.div`
   background-image: url("/static/images/bg-seven.png");
@@ -57,14 +58,24 @@ const FormContainer = styled.div`
 
 const SevenScreen = () => (
     <SevenScreenWrapper>
-        <H3 className={'tc'}>{SevenScreenData.h3}</H3>
-        <Text className={'tc'}>{SevenScreenData.text}</Text>
+        <Fade bottom delay={'200'}>
+            <H3 className={'tc'}>{SevenScreenData.h3}</H3>
+        </Fade>
+        <Fade bottom delay={'400'}>
+            <Text className={'tc'}>{SevenScreenData.text}</Text>
+        </Fade>
         <Form className={'flex flex-column items-center'}>
-            <FormContainer className={'flex justify-center'}>
-                <Input placeholder={SevenScreenData.placeholder[0].name}></Input>
-                <Input placeholder={SevenScreenData.placeholder[1].name}></Input>
-            </FormContainer>
-            <Button value={SevenScreenData.button}/>
+            <Fade bottom delay={'600'}>
+                <FormContainer className={'flex justify-center'}>
+                    <Input placeholder={SevenScreenData.placeholder[0].name}></Input>
+                    <Input placeholder={SevenScreenData.placeholder[1].name}></Input>
+                </FormContainer>
+            </Fade>
+            <Fade bottom delay={'800'}>
+                <div className={'w-100 tc'}>
+                    <Button value={SevenScreenData.button}/>
+                </div>
+            </Fade>
         </Form>
     </SevenScreenWrapper>
 );

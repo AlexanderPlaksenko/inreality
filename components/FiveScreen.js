@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import FiveScreenData from 'static/data/FiveScreen.json';
+import Fade from "react-reveal/Fade";
 
 let getSteps = () => {
     return [
@@ -97,8 +98,9 @@ const StepTextContent = styled.div`
 `;
 const StepsContainer = styled.div``;
 
-const Steps = getSteps().map.call(FiveScreenData.steps, (step,  index) => {
-    return <StepItem key={index} className={`flex flex-column w-third ${step.order===true ? 'imageBottom' : 'imageTop'}`}>
+const Steps = getSteps().map.call(FiveScreenData.steps, (step, index) => {
+    return <StepItem key={index}
+                     className={`flex flex-column w-third ${step.order === true ? 'imageBottom' : 'imageTop'}`}>
         <StepImage className={'flex items-center justify-center StepImage'}>
             <img src={step.image} alt={step.title}/>
         </StepImage>
@@ -112,11 +114,15 @@ const Steps = getSteps().map.call(FiveScreenData.steps, (step,  index) => {
 const FiveScreen = () => (
     <FiveScreenWrapper>
         <FiveScreenContainer>
-            <Title className={'tc'}>{FiveScreenData.h3}</Title>
+            <Fade bottom delay={'200'}>
+                <Title className={'tc'}>{FiveScreenData.h3}</Title>
+            </Fade>
 
-            <StepsContainer className={'flex'}>
-              {Steps}
-            </StepsContainer>
+            <Fade bottom delay={'400'}>
+                <StepsContainer className={'flex'}>
+                    {Steps}
+                </StepsContainer>
+            </Fade>
         </FiveScreenContainer>
     </FiveScreenWrapper>
 );

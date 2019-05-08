@@ -1,6 +1,7 @@
 import styled, {ThemeProvider} from "styled-components"
 import EightScreenData from "/static/data/EightScreen.json"
 import Button from "./Button";
+import Fade from "react-reveal/Fade";
 
 function getItems() {
     return [
@@ -82,20 +83,26 @@ const Items = getItems().map.call(EightScreenData.items, function (item) {
 
 const EightScreen = () => (
     <EightScreenWrapper>
-        <H3>
-            {EightScreenData.h3}
-        </H3>
+        <Fade bottom delay={'200'}>
+            <H3>
+                {EightScreenData.h3}
+            </H3>
+        </Fade>
 
         <ItemsWrapper className={'wrapper'}>
-            <ItemsContent className={'flex'}>
-                {Items}
-            </ItemsContent>
+            <Fade bottom delay={'400'}>
+                <ItemsContent className={'flex'}>
+                    {Items}
+                </ItemsContent>
+            </Fade>
         </ItemsWrapper>
 
         <ThemeProvider theme={themeBlue}>
-            <div className={'tc'}>
-                <Button value={EightScreenData.moreItems}/>
-            </div>
+            <Fade bottom delay={'600'}>
+                <div className={'tc'}>
+                    <Button value={EightScreenData.moreItems}/>
+                </div>
+            </Fade>
         </ThemeProvider>
     </EightScreenWrapper>
 );

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import SixScreenData from "/static/data/SixScreen.json";
 import Button from "./Button";
+import Fade from "react-reveal/Fade";
 
 function getPeoples() {
     return [
@@ -8,10 +9,10 @@ function getPeoples() {
     ]
 }
 
-const SixScreenWrapper = styled.div `
+const SixScreenWrapper = styled.div`
     background: url('/static/images/peoples/bg-six.png') center no-repeat;
 `;
-const Title = styled.h3 `
+const Title = styled.h3`
     font-family: Muller;
     font-size: 40px;
     font-weight: normal;
@@ -19,7 +20,7 @@ const Title = styled.h3 `
     color: #162441;
     margin: 0 auto 24px auto;
 `;
-const Text = styled.p `
+const Text = styled.p`
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -31,7 +32,7 @@ const Text = styled.p `
     margin: 0 auto;
 `;
 
-const People = styled.div `
+const People = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +40,7 @@ const People = styled.div `
     width: calc(100% / 4);
     margin: 60px auto 23px auto;
 `;
-const Avatar = styled.div `
+const Avatar = styled.div`
     border-radius: 50%;
     width: 213px;
     height: 213px;
@@ -52,15 +53,15 @@ const Avatar = styled.div `
         transform: translateX(-50%);    
     }
 `;
-const Icon = styled.div ``;
-const Name = styled.div `
+const Icon = styled.div``;
+const Name = styled.div`
     font-family: Muller;
     font-size: 20px;
     line-height: 22px;
     color: #162441;
     margin: 43px 0 0px 0;
 `;
-const Vacancy = styled.div `
+const Vacancy = styled.div`
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -69,7 +70,7 @@ const Vacancy = styled.div `
     text-align: center;
     color: #162543;          
 `;
-const Peoples = styled.div `
+const Peoples = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin: 75px auto 0 auto;
@@ -87,7 +88,7 @@ const ButtonWrapper = styled.div`
 
 const Items = getPeoples().map.call(SixScreenData.peoples, (people, index) => {
     return <People key={index}>
-        <Avatar style={{ background: `url(${people.photo})` }}>
+        <Avatar style={{background: `url(${people.photo})`}}>
             <Icon>
                 <img src='/static/images/peoples/tg.png'></img>
             </Icon>
@@ -99,16 +100,24 @@ const Items = getPeoples().map.call(SixScreenData.peoples, (people, index) => {
 
 const SixScreen = () => (
     <SixScreenWrapper>
-        <Title className={'tc'}>{SixScreenData.h3}</Title>
-        <Text className={'tc'}>{SixScreenData.text}</Text>
+        <Fade bottom delay={'200'}>
+            <Title className={'tc'}>{SixScreenData.h3}</Title>
+        </Fade>
+        <Fade bottom delay={'400'}>
+            <Text className={'tc'}>{SixScreenData.text}</Text>
+        </Fade>
 
-        <Peoples>
-            {Items}
-        </Peoples>
+        <Fade bottom delay={'600'}>
+            <Peoples>
+                {Items}
+            </Peoples>
+        </Fade>
 
-        <ButtonWrapper>
-            <Button value={SixScreenData.button}/>
-        </ButtonWrapper>
+        <Fade bottom delay={'800'}>
+            <ButtonWrapper>
+                <Button value={SixScreenData.button}/>
+            </ButtonWrapper>
+        </Fade>
     </SixScreenWrapper>
 );
 

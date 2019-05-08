@@ -2,6 +2,7 @@ import styled, {ThemeProvider} from "styled-components"
 import DataFirstScreen from "/static/data/FIrstScreen.json"
 import PlayButton from "/components/PlayButton"
 import Button from "/components/Button"
+import Fade from "react-reveal/Fade"
 
 const themeWhite = {
     borderStyle: '2px solid #ffffff',
@@ -51,27 +52,33 @@ const FirstScreen = () => (
     <Wrapper>
         <div className={'wrapper flex justify-between'}>
             <FirstItem>
-                <H1>
-                    {DataFirstScreen.h1}
-                </H1>
-                <H2>
-                    {DataFirstScreen.h2}
-                </H2>
+                <Fade bottom cascade>
+                    <H1>
+                        {DataFirstScreen.h1}
+                    </H1>
+                    <H2>
+                        {DataFirstScreen.h2}
+                    </H2>
+                </Fade>
             </FirstItem>
 
             <PlayButtonWrapper>
-                <PlayButton ripple={true} text={true}/>
+                <Fade bottom delay={'400'}>
+                    <PlayButton ripple={true} text={true}/>
+                </Fade>
             </PlayButtonWrapper>
         </div>
 
-        <div className={'wrapper flex'}>
-            <ThemeProvider theme={themeBlue}>
-                <Button value={DataFirstScreen.buyButton}/>
-            </ThemeProvider>
-            <ThemeProvider theme={themeWhite}>
-                <Button value={DataFirstScreen.whiteButton}/>
-            </ThemeProvider>
-        </div>
+        <Fade bottom delay={'400'}>
+            <div className={'wrapper flex'}>
+                <ThemeProvider theme={themeBlue}>
+                    <Button value={DataFirstScreen.buyButton}/>
+                </ThemeProvider>
+                <ThemeProvider theme={themeWhite}>
+                    <Button value={DataFirstScreen.whiteButton}/>
+                </ThemeProvider>
+            </div>
+        </Fade>
     </Wrapper>
 );
 
