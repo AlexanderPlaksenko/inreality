@@ -82,7 +82,7 @@ const Items = getItems().map.call(EightScreenData.items, function (item) {
 });
 
 const EightScreen = () => (
-    <EightScreenWrapper>
+    <EightScreenWrapper id={'blog'}>
         <Fade bottom delay={'200'}>
             <H3>
                 {EightScreenData.h3}

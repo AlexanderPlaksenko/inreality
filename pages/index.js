@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from 'react';
 import Head from 'next/head'
 import normalize from 'normalize.css'
 
@@ -12,7 +12,7 @@ import SixScreen from '/components/SixScreen'
 import SevenScreen from "../components/SevenScreen"
 import EightScreen from '/components/EightScreen'
 import Footer from '/components/Footer'
-import config from 'react-reveal/globals';
+import config from 'react-reveal/globals'
 
 config({ssrFadeout: true});
 
@@ -31,19 +31,11 @@ const GlobalStyle = createGlobalStyle`
     .flex {
         display: flex;
     }
-`
+`;
 
 class Index extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            active: this.props.active
-        };
-    }
-
     render = () => {
         return (
-
             <div>
                 <Head>
                     <title>This page has a title 🤔</title>

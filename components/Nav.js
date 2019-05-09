@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import nav from "/static/data/Nav.json"
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function getMenuItems() {
     return [
@@ -7,7 +8,7 @@ function getMenuItems() {
     ]
 }
 
-const MenuItem = styled.a`
+const MenuItem = styled.span`
   color: #ffffff;
   font-family: Muller;
   font-size: 12px;
@@ -26,7 +27,7 @@ const NavItem = styled.nav`
 `;
 
 const menuItems = getMenuItems().map.call(nav, function(item) {
-    return <MenuItem className="link dim" key={item.id} href={item.id}>{item.title}</MenuItem>
+    return <AnchorLink className="link dim" key={item.id} href={'#'+item.id}><MenuItem>{item.title}</MenuItem></AnchorLink>
 });
 
 const Nav = () => (

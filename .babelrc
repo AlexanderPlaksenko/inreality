@@ -4,6 +4,7 @@
   ],
   "plugins": [
     ["styled-components", { "ssr": true }],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
     ["module-resolver", {
       "root": ["./"]
     }]

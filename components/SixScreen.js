@@ -99,7 +99,7 @@ const Items = getPeoples().map.call(SixScreenData.peoples, (people, index) => {
 });
 
 const SixScreen = () => (
-    <SixScreenWrapper>
+    <SixScreenWrapper id={'team'}>
         <Fade bottom delay={'200'}>
             <Title className={'tc'}>{SixScreenData.h3}</Title>
         </Fade>

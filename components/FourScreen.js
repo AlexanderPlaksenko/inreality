@@ -102,7 +102,7 @@ class FourScreen extends React.Component {
             </React.Fragment>
         });
         return (
-            <FourScreenWrapper>
+            <FourScreenWrapper id={'inreality'}>
                 <div className={"wrapper"}>
                     <Fade bottom delay={'200'}>
                         <Title className={'tc'}>
